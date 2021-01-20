@@ -8,7 +8,7 @@
     "build:dist": "gulp build:dist --destination 'dist' && npm run test:build:dist",
     "build": "npm run build:dist && npm run build:package",
     "lint": "stylelint 'src/**/*.scss' && eslint .",
-    "lint:fix": "stylelint 'src/**/*.scss' && eslint --fix .",
+    "lint:fix": "stylelint 'src/**/*.scss' --fix && eslint --fix .",
     "test": "gulp compile-and-copy-assets && jest src && npm run lint",
     "test:update-snapshots": "jest src -u",
     "test:compatibility": "jest __tests__/check-compatibility.test.js",

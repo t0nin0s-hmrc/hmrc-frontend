@@ -64,7 +64,14 @@ params:
   type: string
   required: false
   description: Either "en" for english or "cy" for welsh.
-
+- name: displayHmrcBanner
+  type: boolean
+  required: false
+  description: Display the HMRC banner or not
+- name: userResearchUrl
+  type: string
+  required: false
+  description: If supplied, the user research banner will be displayed linking to the provided url.
 previewLayout: full-width
 accessibilityCriteria: |
   Text and links in the Header must:

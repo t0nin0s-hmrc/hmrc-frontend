@@ -1,5 +1,6 @@
 {% set language = params.language | default('en') %}
 {% from "../banner/macro.njk" import hmrcBanner %}
+{% from "../user-research-banner/macro.njk" import hmrcUserResearchBanner %}
 
 <header role="banner">
   <div class="govuk-header hmrc-header {{ params.classes if params.classes }} {{ 'hmrc-header--with-additional-navigation' if params.signOutHref or params.languageToggle }}" data-module="header"
@@ -104,6 +105,9 @@
       {% endif %}
     </div>
   </div>
+  {% if params.userResearchUrl %}
+    {{ hmrcUserResearchBanner({language: params.language, url: params.userResearchUrl }) }}
+  {% endif %}
   {% if params.displayHmrcBanner %}
     <div class="govuk-width-container">
       {{ hmrcBanner({language: params.language}) }}
