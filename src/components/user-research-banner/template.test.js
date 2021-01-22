@@ -19,14 +19,17 @@ describe('User Research Banner', () => {
 
       expect(results).toHaveNoViolations();
     });
+
     it('should render the correct URL', () => {
       const $ = render('user-research-banner', examples.default);
-      expect($('.hmrc-user-research-banner__link').attr('href')).toEqual('#');
+      expect($('.hmrc-user-research-banner__link').attr('href')).toEqual('https://www.example.com/user-research');
     });
+
     it('should have English text by default', () => {
       const $ = render('user-research-banner', examples.default);
       expect($('.hmrc-user-research-banner__title').text().trim()).toEqual('Help improve GOV.UK');
     });
+
     it('should have Welsh text when specified', () => {
       const $ = render('user-research-banner', examples.welsh);
       expect($('.hmrc-user-research-banner__title').text().trim()).toEqual('Helpwch i wella GOV.UK');

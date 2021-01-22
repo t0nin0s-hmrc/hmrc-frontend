@@ -14,7 +14,7 @@ examples:
 - name: default
   description: The standard user research banner
   data:
-    url: '#'
+    url: 'https://www.example.com/user-research'
     language: en
 - name: welsh
   description: The standard user research banner for Welsh

@@ -18,8 +18,8 @@ $hmrc-user-research-banner-blue: #005ea5;
 }
 
 .hmrc-user-research-banner {
+  display: none;
   position: relative;
-  z-index: 999;
   color: govuk-colour("white");
   background-color: $hmrc-user-research-banner-blue;
 
@@ -38,6 +38,10 @@ $hmrc-user-research-banner-blue: #005ea5;
 
   &__link {
     @include hmrc-white-link();
+  }
+
+  &--show {
+    display: block;
   }
 
   &__close {

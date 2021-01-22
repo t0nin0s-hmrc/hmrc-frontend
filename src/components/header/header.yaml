@@ -96,7 +96,7 @@ examples:
 - name: default
   description: The standard header as used on information pages on GOV.UK
   data:
-    {}
+    userResearchUrl: '/foo'
 
 - name: with service name
   description: If your service is more than a few pages long, you can help users understand where they are by adding the service name.

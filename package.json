@@ -73,6 +73,7 @@
     "js-yaml": "^3.14.1",
     "merge-stream": "^1.0.1",
     "mkdirp": "^1.0.4",
+    "mockdate": "^3.0.2",
     "node-sass": "^5.0.0",
     "nodemon": "^2.0.3",
     "nunjucks": "^3.2.1",
