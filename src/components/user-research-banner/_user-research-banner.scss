@@ -1,7 +1,5 @@
 @import "node_modules/govuk-frontend/govuk/helpers/typography";
 
-$hmrc-user-research-banner-blue: #005ea5;
-
 @mixin hmrc-white-link() {
   color: govuk-colour("white");
 
@@ -21,16 +19,11 @@ $hmrc-user-research-banner-blue: #005ea5;
   display: none;
   position: relative;
   color: govuk-colour("white");
-  background-color: $hmrc-user-research-banner-blue;
+  background-color: $govuk-brand-colour;
+  box-sizing: border-box;
 
+  @include govuk-responsive-padding(6);
   @include govuk-font($size: 19);
-
-  &__container {
-    position: relative;
-
-    @include govuk-responsive-padding(6, "bottom");
-    @include govuk-responsive-padding(6, "top");
-  }
 
   &__title {
     @include govuk-responsive-margin(1, "bottom");
@@ -61,7 +54,7 @@ $hmrc-user-research-banner-blue: #005ea5;
       position: absolute;
       margin-top: 0;
 
-      @include _govuk-responsive-spacing(3, "right");
+      @include _govuk-responsive-spacing(6, "right");
       @include _govuk-responsive-spacing(6, "top");
     }
   }

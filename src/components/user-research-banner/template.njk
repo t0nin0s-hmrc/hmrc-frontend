@@ -1,27 +1,25 @@
-<div class="hmrc-user-research-banner" data-module="hmrc-user-research-banner">
-    <div class="govuk-width-container hmrc-user-research-banner__container">
-        <div class="hmrc-user-research-banner__text">
-            <div class="hmrc-user-research-banner__title govuk-!-font-weight-bold">
-              {% if params.language == 'cy' %}
-                Helpwch i wella GOV.UK
-              {% else %}
-                Help improve GOV.UK
-              {% endif %}
-            </div>
-            <a class="govuk-link hmrc-user-research-banner__link" href="{{ params.url }}" target="_blank" data-journey-click="link - click:homepage UR banner:Help improve digital services by joining the HMRC User Panel (opens in a new window)">
-              {% if params.language == 'cy' %}
-                Helpwch i wella gwasanaethau digidol drwy ymuno â phanel defnyddwyr CThEM (yn agor ffenestr newydd)
-              {% else %}
-                Help improve digital services by joining the HMRC User Panel (opens in new tab)
-              {% endif %}
-            </a>
-        </div>
-        <button class="govuk-link hmrc-user-research-banner__close">
-          {% if params.language == 'cy' %}
-            Dim diolch
-          {% else %}
-            No thanks
-          {% endif %}
-        </button>
-    </div>
+<div class="hmrc-user-research-banner govuk-width-container" data-module="hmrc-user-research-banner">
+  <div class="hmrc-user-research-banner__text">
+      <div class="hmrc-user-research-banner__title govuk-!-font-weight-bold">
+        {% if params.language == 'cy' %}
+          Helpwch i wella GOV.UK
+        {% else %}
+          Help improve GOV.UK
+        {% endif %}
+      </div>
+      <a class="govuk-link hmrc-user-research-banner__link" href="{{ params.url }}" target="_blank" data-journey-click="link - click:homepage UR banner:Help improve digital services by joining the HMRC User Panel (opens in a new window)">
+        {% if params.language == 'cy' %}
+          Helpwch i wella gwasanaethau digidol drwy ymuno â phanel defnyddwyr CThEM (yn agor ffenestr newydd)
+        {% else %}
+          Help improve digital services by joining the HMRC User Panel (opens in new tab)
+        {% endif %}
+      </a>
+  </div>
+  <button class="govuk-link hmrc-user-research-banner__close">
+    {% if params.language == 'cy' %}
+      Dim diolch
+    {% else %}
+      No thanks
+    {% endif %}
+  </button>
 </div>
