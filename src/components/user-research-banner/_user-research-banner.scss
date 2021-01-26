@@ -21,9 +21,13 @@
   color: govuk-colour("white");
   background-color: $govuk-brand-colour;
   box-sizing: border-box;
-
-  @include govuk-responsive-padding(6);
+  @include govuk-responsive-padding(6, "top");
+  @include govuk-responsive-padding(6, "bottom");
   @include govuk-font($size: 19);
+
+  &__container {
+    position: relative;
+  }
 
   &__title {
     @include govuk-responsive-margin(1, "bottom");
@@ -53,9 +57,8 @@
     @include govuk-media-query ($from: desktop) {
       position: absolute;
       margin-top: 0;
-
-      @include _govuk-responsive-spacing(6, "right");
-      @include _govuk-responsive-spacing(6, "top");
+      top: 0;
+      right: 0;
     }
   }
 }
